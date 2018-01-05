@@ -1,0 +1,18 @@
+<input type="number" placeholder="输入" (change)="_input($event)">
+<input type="number" placeholder="结果" (change)="_output($event)">
+
+<br>
+<a (click)="add()">计算</a>
+
+<table id='color-table' border='0'>
+    <tr>
+        <th>Original Color</th>
+        <th>Actual Complement</th>
+        <th>Predicted Complement</th>
+    </tr>
+    <tr *ngFor="let color of colorObjs">
+        <td [style.background-color]="color.rgb"></td>
+        <td [style.background-color]="color.complement"></td>
+        <td [style.background-color]="color.predictedColor"></td>
+    </tr>
+</table>

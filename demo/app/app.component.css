@@ -1,0 +1,30 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+#color-table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#color-table,
+#color-table th,
+#color-table td {
+    border: 1px solid #000;
+}
+
+#color-table th,
+#color-table td {
+    padding: 10px;
+}
+
+#color-table td {
+    width: 200px;
+}
+
+.color-box {
+    border-radius: 10px;
+    height: 60px;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
